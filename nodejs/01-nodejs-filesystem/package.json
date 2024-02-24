@@ -1,0 +1,17 @@
+{
+  "name": "01-nodejs-filesystem",
+  "version": "1.0.0",
+  "description": "creating first nodejs file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "yogha raj dhayal",
+  "license": "ISC",
+  "dependencies": {
+    "math": "^0.0.3"
+  }
+}
