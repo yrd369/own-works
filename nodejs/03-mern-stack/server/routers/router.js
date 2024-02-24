@@ -4,12 +4,12 @@ const router = express.Router();
 router.get("/", (req, res) => {
   return res.json({ message: "I am root page" });
 });
-router.get("/home", (req, res) => {
-  return res.json({ message: "vanakam" });
+router.post("/create", (req, res) => {
+  const dataFromClient = req.body;
+  const data = {
+    name: "yogha raj",
+    createAt: new Date(),
+  };
+  return res.json({ ...dataFromClient, createAt: Date.now() });
 });
-
-router.get("/home/:id", (req, res) => {
-  return res.json({ message: req.params.id });
-});
-router.use("/users", userRouter);
 export default router;
